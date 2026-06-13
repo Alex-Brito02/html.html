@@ -9,11 +9,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <style>
-        #main-nav {
-            width: 280px;
-        }
+      #main-nav {
+        width: 280px;
+      }
     </style>
   </head>
 
@@ -29,41 +32,103 @@
         />
       </h1>
       <div>
-        <span>Alex da Silva Brito</span>
-    <span>
-  <button
-   class="btn btn-link dropdown-toggle"
-    type="button"
-    data-bs-taggle="dropdown"
-    aria-expanded="false"
-  ></button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</span>
+        <div class="d-none d-md-block">
+          <span>Alex da Silva Brito</span>
+          <span>
+            <button
+              class="btn btn-link dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </span>
+        </div>
+        <button
+          class="btn btn-outline-primary d-md-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#main-menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </header>
     <div class="d-flex">
-    <nav id="main-nav"class="bg-dark vh-100 p-3 py-2">
-      <ul class="nav nav-pills d-flex-column">
-        <li class="nav-atem">
-            <a href="#" class="nav-link text-white active "><i class="bi bi-house-door-fill"></i>
-            <span>Página Inicial </span>
-            </a>
-        </li>
-        <li class="naw-item">
-            <a href="#" class="nav-link text-white"><i class="bi bi-people-fill"></i>
-                <span>Lista de usuários</span>
-
+      <div class="offcanvas-md" id="main-menu">
+        <div class="offcanvas-header"></div>
+        <div class="offcanvas-body">
+          <nav id="main-nav" class="bg-dark vh-100 p-3 py-2">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-atem">
+                <a href="#" class="nav-link text-white active"
+                  ><i class="bi bi-house-door-fill"></i>
+                  <span>Página Inicial </span>
                 </a>
-        </li>
-      </ul>
-    </nav>
-    <main class="p-3 vh-100 w-100">
-      <h2 class="border-bottom display-6 pb-2 fw-medium mb-1">Página Inicial do Sistema</h2>
-      <p>Seja bem vindo!</p>
-    </main>
+              </li>
+              <li class="naw-item">
+                <a href="#" class="nav-link text-white"
+                  ><i class="bi bi-people-fill"></i>
+                  <span>Lista de usuários</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main class="p-3 vh-100 w-100">
+        <h2 class="border-bottom display-6 pb-2 fw-medium mb-1">
+          Página Inicial do Sistema
+        </h2>
+
+        <p>Seja bem vindo ao sistema</p>
+        <div class="row">
+           <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+           <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+           <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+           <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+           <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+          <div class="col-6 col-xl-3">
+            <a href="#" class="btn btn-outline-primary d-block">
+              <i class="bi bi-house-door-fill display-5"></i>
+              <div>Página Inicial</div>
+            </a>
+            
+          </div>
+        </div>
+      </main>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
